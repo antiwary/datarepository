@@ -47,8 +47,11 @@
 							"dependsOn": [],
 							"userProperties": [],
 							"typeProperties": {
-								"variableName": "BlobName",
-								"value": ""
+								"variableName": "BlobPath",
+								"value": {
+									"value": "@{item().Path}",
+									"type": "Expression"
+								}
 							}
 						},
 						{
@@ -64,8 +67,11 @@
 							],
 							"userProperties": [],
 							"typeProperties": {
-								"variableName": "BlobPath",
-								"value": ""
+								"variableName": "BlobName",
+								"value": {
+									"value": "@{item().BlobName}",
+									"type": "Expression"
+								}
 							}
 						}
 					]
