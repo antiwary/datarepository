@@ -5,8 +5,17 @@
 		"factoryName": {
 			"value": "adltrainingdatafactory"
 		},
+		"ADLAzureSqlDatabase_connectionString": {
+			"value": ""
+		},
+		"ADLAzureDataLakeStorage_accountKey": {
+			"value": ""
+		},
 		"ADLAzureKeyVault1_properties_typeProperties_baseUrl": {
 			"value": "https://adltrainingkv.vault.azure.net/"
+		},
+		"ADLAzureDataLakeStorage_properties_typeProperties_url": {
+			"value": "https://adlstoragedls.dfs.core.windows.net"
 		}
 	}
 }
