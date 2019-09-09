@@ -39,10 +39,26 @@
 				],
 				"userProperties": [],
 				"typeProperties": {
-					"isSequential": true
+					"isSequential": true,
+					"activities": [
+						{
+							"name": "Set Variable2",
+							"type": "SetVariable",
+							"dependsOn": [],
+							"userProperties": []
+						}
+					]
 				}
 			}
 		],
+		"variables": {
+			"BlobName": {
+				"type": "String"
+			},
+			"BlobPath": {
+				"type": "String"
+			}
+		},
 		"annotations": []
 	}
 }
