@@ -1,0 +1,10 @@
+{
+	"name": "ADLAzureKeyVault1",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://adltrainingkv.vault.azure.net/"
+		}
+	}
+}
