@@ -39,6 +39,10 @@
 				],
 				"userProperties": [],
 				"typeProperties": {
+					"items": {
+						"value": "@activity('MyLookup').output",
+						"type": "Expression"
+					},
 					"isSequential": true,
 					"activities": [
 						{
