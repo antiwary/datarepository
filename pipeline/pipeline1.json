@@ -42,10 +42,24 @@
 					"isSequential": true,
 					"activities": [
 						{
-							"name": "Set Variable2",
+							"name": "SetVariable1",
 							"type": "SetVariable",
 							"dependsOn": [],
-							"userProperties": []
+							"userProperties": [],
+							"typeProperties": {
+								"variableName": "BlobName",
+								"value": ""
+							}
+						},
+						{
+							"name": "SetVariable2",
+							"type": "SetVariable",
+							"dependsOn": [],
+							"userProperties": [],
+							"typeProperties": {
+								"variableName": "BlobPath",
+								"value": ""
+							}
 						}
 					]
 				}
