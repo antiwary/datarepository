@@ -47,24 +47,24 @@
 					"isSequential": true,
 					"activities": [
 						{
-							"name": "SetVariable1",
+							"name": "SetVariableName",
 							"type": "SetVariable",
 							"dependsOn": [],
 							"userProperties": [],
 							"typeProperties": {
-								"variableName": "BlobPath",
+								"variableName": "BlobName",
 								"value": {
-									"value": "@{item().Path}",
+									"value": "@{item().BlobName}",
 									"type": "Expression"
 								}
 							}
 						},
 						{
-							"name": "SetVariable2",
+							"name": "SetVariablePath",
 							"type": "SetVariable",
 							"dependsOn": [
 								{
-									"activity": "SetVariable1",
+									"activity": "SetVariableName",
 									"dependencyConditions": [
 										"Succeeded"
 									]
@@ -72,9 +72,9 @@
 							],
 							"userProperties": [],
 							"typeProperties": {
-								"variableName": "BlobName",
+								"variableName": "BlobPath",
 								"value": {
-									"value": "@{item().BlobName}",
+									"value": "@{item().Path}",
 									"type": "Expression"
 								}
 							}
