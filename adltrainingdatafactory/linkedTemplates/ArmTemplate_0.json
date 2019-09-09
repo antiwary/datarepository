@@ -183,7 +183,8 @@
 								"referenceName": "ADLAzureSqlTable",
 								"type": "DatasetReference",
 								"parameters": {}
-							}
+							},
+							"firstRowOnly": false
 						}
 					},
 					{
