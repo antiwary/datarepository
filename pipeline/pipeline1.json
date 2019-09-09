@@ -54,7 +54,14 @@
 						{
 							"name": "SetVariable2",
 							"type": "SetVariable",
-							"dependsOn": [],
+							"dependsOn": [
+								{
+									"activity": "SetVariable1",
+									"dependencyConditions": [
+										"Succeeded"
+									]
+								}
+							],
 							"userProperties": [],
 							"typeProperties": {
 								"variableName": "BlobPath",
